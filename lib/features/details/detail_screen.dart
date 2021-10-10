@@ -1,4 +1,4 @@
-import 'dart:ffi';
+
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -52,15 +52,15 @@ class _DetailState extends State<DetailScreen>{
                       fontWeight: FontWeight.w500
                     ),),
                     SizedBox(height: 5.h,),
-                    Text(widget.movie.genre, style: GoogleFonts.poppins(
-                      color: Colors.white,
+                    Text("${widget.movie.year} |" " ${widget.movie.genre} | Episode -1", style: GoogleFonts.poppins(
+                      color: mGreyTextColor,
                       fontSize: 18.sp,
                       fontWeight: FontWeight.w300,
                     ),),
                     SizedBox(height: 5.h,),
                     GFRating(
                       value: _rating,
-                      size: 20,
+                      size: 23,
                       color: nRatingColorBg,
                       onChanged: (value) {
                         setState(() {
@@ -111,7 +111,7 @@ class _DetailState extends State<DetailScreen>{
                     ),
                     SizedBox(height:10.h,), Text(
                       widget.movie.plot,style: GoogleFonts.poppins(
-                        color: Colors.white,
+                        color: mGreyTextColor,
                         fontWeight: FontWeight.w500,
                         fontSize: 16.sp
                     ),

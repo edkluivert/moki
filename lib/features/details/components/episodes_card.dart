@@ -18,6 +18,10 @@ class EpisodeCard extends StatelessWidget{
   Widget build(BuildContext context) {
     return Card(
       elevation: 5,
+      shadowColor: mPrimaryColor.withBlue(10),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20.r)
+      ),
       color: Colors.transparent,
       child: Stack(
         alignment: Alignment.center,
@@ -34,7 +38,7 @@ class EpisodeCard extends StatelessWidget{
             ),
           ),
           Positioned(
-            top: 100.h,
+            top: 120.h,
             child: Text(episode.numbering, style: GoogleFonts.poppins(
               fontSize: 12.sp,
               color: Colors.white,
@@ -42,10 +46,10 @@ class EpisodeCard extends StatelessWidget{
             ),),
           ),
        Positioned(
-         top: 130.h,
+         top: 150.h,
             child: Text(episode.title, style: GoogleFonts.poppins(
                 fontSize: 12.sp,
-                color: Colors.white,
+                color: mGreyTextColor,
                 fontWeight: FontWeight.w300
             ),),
           )

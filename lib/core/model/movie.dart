@@ -33,7 +33,7 @@ List<Movie> movies = [
     rating: 7.3,
     criticsReview: 50,
     metascoreRating: 76,
-    genre: "Action | Romance | Supernatural",
+    genre: "Action, Romance, Supernatural",
     plot: plotText,
   ),
   Movie(
@@ -46,7 +46,7 @@ List<Movie> movies = [
     rating: 8.2,
     criticsReview: 50,
     metascoreRating: 76,
-    genre: "Crime drama | Heist | Thriller",
+    genre: "Crime drama, Heist, Thriller",
     plot: plotText,
   ),
   Movie(
@@ -59,7 +59,7 @@ List<Movie> movies = [
     rating: 8.3,
     criticsReview: 50,
     metascoreRating: 79,
-    genre: "Comedy | Drama",
+    genre: "Comedy, Drama",
     plot: plotText,
   ),
 ];
